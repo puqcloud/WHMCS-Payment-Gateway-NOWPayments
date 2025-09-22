@@ -1,0 +1,61 @@
+# Gateway Configuration Screen
+
+### NOWPayments Payment Gateway **[WHMCS](https://puqcloud.com/link.php?id=77)** 
+
+#####  [Order now](https://puqcloud.com/index.php?rp=/store/whmcs-module-nowpayments-payment-gateway) | [Download](https://download.puqcloud.com/WHMCS/gateways/PUQ_WHMCS_PG-nowpayments/) | [FAQ](https://faq.puqcloud.com/)
+
+[![image-1758535376496.png](https://doc.puq.info/uploads/images/gallery/2025-09/scaled-1680-/image-1758535376496.png)](https://doc.puq.info/uploads/images/gallery/2025-09/image-1758535376496.png)
+
+The gateway configuration screen provides administrators with comprehensive control over the NOWPayments payment gateway settings. This interface allows you to manage all aspects of cryptocurrency payment processing, from basic display options to advanced security configurations.
+
+###### Display Settings
+
+- **Show on Order Form:** Controls whether NOWPayments appears as a payment option during customer checkout. When enabled, customers will see NOWPayments in the payment method selection list.
+- **Display Name:** Customizable name that appears to customers on the order form. Default is "NOWPayments" but can be modified to match your brand identity or preferred terminology.
+
+###### License Management
+
+- **License Key:** Displays your module license key with real-time validation status. The system shows "success" with expiration date when the license is active and valid. License verification ensures you have access to all module features and support.
+
+###### Environment Configuration
+
+- **Mode of Operation:** Critical setting that determines whether payments are processed in sandbox (testing) or production (live) environment. Always test thoroughly in sandbox mode before switching to production to avoid processing real transactions during setup.
+
+###### API Credentials
+
+- **API Key (Production):** Your live environment API key from NOWPayments. This key authenticates your WHMCS installation with NOWPayments production servers for processing real cryptocurrency payments. Keep this key secure and never share it publicly.
+- **IPN Secret Key (Production):** Security key for validating Instant Payment Notifications in the live environment. This ensures that payment status updates are genuinely from NOWPayments and prevents unauthorized payment confirmations.
+
+- **API Key (Sandbox):** Testing environment API key for development and testing purposes. Use this key to test payment flows without processing real transactions or spending actual cryptocurrency.
+- **IPN Secret Key (Sandbox):** Security key for sandbox IPN callbacks, allowing you to test webhook functionality in a safe environment before going live.
+
+###### Webhook Configuration
+
+- **IPN Callback URL:** Automatically generated URL where NOWPayments sends payment status notifications. This URL must be configured in your NOWPayments account settings to enable automatic payment processing. The format follows: `https://yourdomain.com/modules/gateways/callback/puq_nowpayments.php`
+
+###### System Information
+
+- **Module Version:** Displays the currently installed version of the NOWPayments module (e.g., "1.0"). This information is useful for troubleshooting and ensuring you have the latest features and security updates.
+- **Convert To For Processing:** Specifies the target currency for payment processing. All incoming cryptocurrency payments are automatically converted to this currency using real-time exchange rates from NOWPayments API.
+
+###### Security Features
+
+- **HMAC Signature Verification:** All webhook notifications are verified using HMAC-SHA512 signatures to ensure authenticity and prevent payment fraud.
+- **Secure API Communication:** All API calls use HTTPS encryption and proper authentication headers for secure data transmission.
+- **Environment Isolation:** Clear separation between sandbox and production environments prevents accidental live transactions during testing.
+
+###### Monitoring and Logging
+
+- **Transaction Logging:** All payment attempts, successes, and failures are logged in WHMCS for audit purposes and troubleshooting.
+- **API Call Logging:** Detailed logs of all NOWPayments API interactions help diagnose connectivity or configuration issues.
+- **Error Tracking:** Comprehensive error handling and logging for failed payments, API errors, and webhook validation failures.
+
+<p class="callout warning">Important Configuration Notes:</p>
+
+- Always test your configuration in sandbox mode before enabling production payments
+- Ensure your server can receive incoming webhook notifications from NOWPayments
+- Keep your API keys and IPN secret keys secure and regularly rotate them
+- Monitor the WHMCS gateway logs regularly for any payment processing issues
+- Verify that the IPN Callback URL is correctly configured in your NOWPayments account
+
+<div id="bkmrk--0"><div></div></div>
