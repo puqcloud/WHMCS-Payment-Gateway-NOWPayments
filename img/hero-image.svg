@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="300" viewBox="0 0 1200 300">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0b1120;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#161c33;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0b1120;stop-opacity:1" />
+    </linearGradient>
+    <!-- Accent Top Line Gradient -->
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#0be0c7;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#38bdf8;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#10b981;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="coinGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0be0c7;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0284c7;stop-opacity:1" />
+    </linearGradient>
+    <!-- Subtle Grid Pattern -->
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1e293b" stroke-width="0.75" stroke-opacity="0.4"/>
+    </pattern>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="300" fill="url(#bg)"/>
+  <rect width="1200" height="300" fill="url(#grid)" opacity="0.6"/>
+  <rect x="0" y="0" width="1200" height="4" fill="url(#accent)"/>
+
+  <!-- Ambient Glow -->
+  <circle cx="180" cy="150" r="120" fill="#0be0c7" opacity="0.12" />
+  <circle cx="180" cy="150" r="80" fill="#38bdf8" opacity="0.15" />
+
+  <!-- LEFT: Illustration (Centered around X=180, Y=150) -->
+  <g transform="translate(180, 150) scale(1.6)">
+    <g transform="translate(-40, -40)">
+      <circle cx="40" cy="40" r="38" fill="#0be0c7" opacity="0.08" stroke="#0be0c7" stroke-width="1.5" stroke-dasharray="4,3"/>
+      <circle cx="40" cy="40" r="28" fill="url(#coinGrad)" opacity="0.25" stroke="#0be0c7" stroke-width="2.5"/>
+      <circle cx="40" cy="40" r="20" fill="none" stroke="#38bdf8" stroke-width="1.5"/>
+
+      <!-- Crypto Symbol -->
+      <path d="M37,28 L37,52 M41,28 L41,52 M33,32 L42,32 C46,32 48,34 48,36 C48,39 46,40 42,40 M33,40 L44,40 C48,40 50,42 50,45 C50,49 47,50 42,50 L33,50 M37,25 L37,28 M41,25 L41,28 M37,52 L37,55 M41,52 L41,55" 
+            fill="none" stroke="#ffffff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+
+      <!-- Orbiting nodes -->
+      <circle cx="70" cy="18" r="6" fill="#1e293b" stroke="#38bdf8" stroke-width="1.5"/>
+      <circle cx="70" cy="62" r="7" fill="#10b981"/>
+      <polyline points="67,62 69,64 73,59" fill="none" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+  </g>
+
+  <!-- CENTER: Text Content -->
+  <g transform="translate(360, 45)">
+    <!-- Subtitle Category -->
+    <text x="0" y="25" font-family="Arial, sans-serif" font-size="15" font-weight="bold" fill="#0be0c7" letter-spacing="3">WHMCS PAYMENT GATEWAY</text>
+
+    <!-- Main Title -->
+    <text x="0" y="82" font-family="Arial, sans-serif" font-size="50" font-weight="bold" fill="#ffffff">PUQ NOWPAYMENTS</text>
+
+    <!-- Key Features List -->
+    <g transform="translate(0, 115)">
+      <!-- Feature 1 -->
+      <g transform="translate(0, 0)">
+        <circle cx="8" cy="8" r="7" fill="#0be0c7" opacity="0.2"/>
+        <circle cx="8" cy="8" r="3" fill="#0be0c7"/>
+        <text x="25" y="13" font-family="Arial, sans-serif" font-size="16" fill="#e2e8f0" font-weight="500">Accept 200+ Cryptocurrencies with Auto Coin Conversion</text>
+      </g>
+      <!-- Feature 2 -->
+      <g transform="translate(0, 32)">
+        <circle cx="8" cy="8" r="7" fill="#38bdf8" opacity="0.2"/>
+        <circle cx="8" cy="8" r="3" fill="#38bdf8"/>
+        <text x="25" y="13" font-family="Arial, sans-serif" font-size="16" fill="#cbd5e1">Real-Time IPN Webhook Confirmations &amp; Automated Invoicing</text>
+      </g>
+      <!-- Feature 3 -->
+      <g transform="translate(0, 64)">
+        <circle cx="8" cy="8" r="7" fill="#10b981" opacity="0.2"/>
+        <circle cx="8" cy="8" r="3" fill="#10b981"/>
+        <text x="25" y="13" font-family="Arial, sans-serif" font-size="16" fill="#94a3b8">Support for Production &amp; Sandbox, Secure HMAC Verification</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- RIGHT: Branding and Marketplace Badge -->
+  <g transform="translate(980, 50)">
+    <!-- Glass card container -->
+    <rect x="0" y="0" width="180" height="200" rx="12" fill="#1e293b" fill-opacity="0.5" stroke="#334155" stroke-width="1.5"/>
+
+    <!-- WHMCS Marketplace Pill -->
+    <rect x="25" y="25" width="130" height="26" rx="13" fill="#0be0c7" fill-opacity="0.15" stroke="#0be0c7" stroke-width="1"/>
+    <text x="90" y="42" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#0be0c7" text-anchor="middle" letter-spacing="1">MARKETPLACE</text>
+
+    <!-- Verified Badge -->
+    <g transform="translate(90, 95)">
+      <circle cx="0" cy="0" r="24" fill="#0be0c7" opacity="0.1"/>
+      <circle cx="0" cy="0" r="18" fill="#0be0c7" opacity="0.2"/>
+      <path d="M-8,0 L-3,5 L8,-6" fill="none" stroke="#0be0c7" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+
+    <!-- PUQ Software Branding -->
+    <text x="90" y="150" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="#ffffff" text-anchor="middle">PUQ</text>
+    <text x="90" y="172" font-family="Arial, sans-serif" font-size="13" font-weight="500" fill="#94a3b8" text-anchor="middle">Software</text>
+  </g>
+</svg>

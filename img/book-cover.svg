@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="440" height="250" viewBox="0 0 440 250">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0b1120;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#161c33;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#0be0c7;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#38bdf8;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="coinGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0be0c7;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0284c7;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="440" height="250" fill="url(#bg)" rx="8"/>
+
+  <!-- Accent line top -->
+  <rect x="0" y="0" width="440" height="4" fill="url(#accent)" rx="2"/>
+
+  <!-- Crypto Payment Illustration -->
+  <g transform="translate(35, 55)">
+    <!-- Outer Shield / Circle Glow -->
+    <circle cx="45" cy="45" r="42" fill="#0be0c7" opacity="0.08" stroke="#0be0c7" stroke-width="1.5" stroke-dasharray="4,3"/>
+    
+    <!-- Primary Crypto Coin -->
+    <circle cx="45" cy="45" r="32" fill="url(#coinGrad)" opacity="0.2" stroke="#0be0c7" stroke-width="2.5"/>
+    <circle cx="45" cy="45" r="24" fill="none" stroke="#38bdf8" stroke-width="1.5"/>
+
+    <!-- Bitcoin/Crypto Currency Symbol -->
+    <path d="M41,32 L41,58 M46,32 L46,58 M37,36 L47,36 C51,36 53,38 53,41 C53,44 51,45 47,45 M37,45 L49,45 C53,45 55,47 55,51 C55,55 52,56 47,56 L37,56 M41,29 L41,32 M46,29 L46,32 M41,58 L41,61 M46,58 L46,61" 
+          fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <!-- Orbiting secondary coin (ETH-style diamond) -->
+    <g transform="translate(85, 20)">
+      <circle cx="12" cy="12" r="14" fill="#1e293b" stroke="#38bdf8" stroke-width="1.5"/>
+      <path d="M12,4 L18,12 L12,15 L6,12 Z M12,16 L18,13 L12,20 L6,13 Z" fill="#38bdf8" opacity="0.9"/>
+    </g>
+
+    <!-- Success check badge -->
+    <circle cx="85" cy="72" r="11" fill="#10b981"/>
+    <polyline points="80,72 83,75 89,68" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- WHMCS badge -->
+  <g transform="translate(145, 65)">
+    <rect x="0" y="0" width="75" height="28" rx="5" fill="#0be0c7" opacity="0.15" stroke="#0be0c7" stroke-width="1.5"/>
+    <text x="37" y="19" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#38bdf8" text-anchor="middle">WHMCS</text>
+  </g>
+
+  <!-- Module title -->
+  <text x="235" y="86" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="white" text-anchor="start">NOWPayments</text>
+
+  <!-- Subtitle -->
+  <text x="235" y="114" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#0be0c7" text-anchor="start">Payment Gateway Module</text>
+
+  <!-- Divider -->
+  <rect x="235" y="126" width="60" height="2" fill="#0be0c7" rx="1"/>
+
+  <!-- Description -->
+  <text x="235" y="150" font-family="Arial, sans-serif" font-size="11" fill="#94a3b8" text-anchor="start">Accept 200+ cryptocurrencies with</text>
+  <text x="235" y="166" font-family="Arial, sans-serif" font-size="11" fill="#94a3b8" text-anchor="start">instant auto coin-to-coin conversion</text>
+
+  <!-- PUQ Software branding -->
+  <g transform="translate(30, 210)">
+    <text x="0" y="15" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="#0be0c7">PUQ</text>
+    <text x="55" y="15" font-family="Arial, sans-serif" font-size="12" fill="#94a3b8">Software</text>
+  </g>
+</svg>
